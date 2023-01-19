@@ -16,6 +16,7 @@
 body {
     color: var(--clr-black);
     background: var(--clr-white);
+    font-family: var(--font-fam-montserrat);
 }
 
 

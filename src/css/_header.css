@@ -1,0 +1,119 @@
+.mnmlst-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+
+    --height-navbar: 56px;
+}
+
+.mnmlst-header__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 1125px;
+    height: var(--height-navbar);
+    max-width: 95%;
+    padding: 0 20px;
+    background-color: red;
+
+    position: relative;
+}
+
+/* Site logo */
+.mnmlst-header__site-logo-link {
+    min-width: 110px;
+    padding: 12px 0;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.mnmlst-header__site-logo-img {
+    width: 110px;
+}
+
+.mnmlst-header__site-logo-link:hover {
+    opacity: .8;
+    transform: scale(1.1);
+}
+
+/* Menu-Links - Common styles for desktop and mobile menu */
+.mnmlst-header__menu-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    white-space: nowrap;
+}
+
+/* Menu-Links for desktop screens */
+.mnmlst-header__menu-links--desktop {
+    display: flex;
+}
+
+/* Menu-links items - Common styles */
+.mnmlst-header__menu-links__item {
+    color: #272727;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 12px 0;
+    text-transform: uppercase;
+}
+
+.mnmlst-header__menu-links__item::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 4px;
+    left: 0;
+    width: 10%;
+    height: 2px;
+    background-color: transparent;
+    transition: width .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.mnmlst-header__menu-links__item:hover:after {
+    width: 100%;
+    background-color: var(--clr-yellow);
+}
+
+/* Menu-Button */
+.mnmlst-header__menu-btn {
+    width: 28px;
+    padding: 12px 0;
+    min-width: 28px;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.mnmlst-header__menu-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Menu-Links for mobile screens */
+.mnmlst-header__menu-links--mobile {
+    position: absolute;
+    top: var(--height-navbar);
+    right: 0;
+    width: 100%;
+    height: auto;
+    padding: 16px 0;
+
+    display: flex;
+    flex-direction: column;
+
+    background: var(--clr-black);
+    backdrop-filter: blur(7px);
+
+    /* To display mobile menu with animation */
+    transform: translateY(calc(-100% - var(--height-navbar)));
+    transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.mnmlst-header__menu-links--mobile--active {
+    transform: translateY(calc(100% + var(--height-navbar)));
+}
+
+.mnmlst-header__menu-links--mobile .mnmlst-header__menu-links__item {
+    font-size: 1.8rem;
+    color: var(--clr-white);
+}
