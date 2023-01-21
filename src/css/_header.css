@@ -1,5 +1,5 @@
 .mnmlst-header {
-    padding-top: 20px;
+    padding-top: 32px;
     --height-navbar: 56px;
 }
 
@@ -113,6 +113,10 @@
 /* =============== Responsive */
 @media screen and (max-width: 860px) {
 
+    .mnmlst-header {
+        padding-top: 12px;
+    }
+
     /* Hide desktop menu */
     .mnmlst-header__menu-links {
         display: none;
@@ -136,8 +140,8 @@
         backdrop-filter: blur(7px);
 
         /* To display mobile menu with animation */
-        transform: translateY(calc(-100% - var(--height-navbar) - 10px));
-        transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        transform: translateY(-200%);
+        transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 
     .mnmlst-header__menu-links--mobile--active {
