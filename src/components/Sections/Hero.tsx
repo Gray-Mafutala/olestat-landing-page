@@ -11,7 +11,8 @@ const Hero = () => {
         <div className="flex flex-col gap-y-8">
           {/* title and paragraph */}
           <h1 className="text-white text-6xl desktop:text-7xl font-bold">
-            We Build A <br /> Premium Business
+            We Build A <br />
+            Premium maruis
           </h1>
           <p className="max-w-lg text-white">
             Risus commodo id odio turpis pharetra elementum. Pulvinar porta
