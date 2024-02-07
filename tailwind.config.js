@@ -6,6 +6,7 @@ export default {
       colors: {
         "violet-blue": "#6425d3",
         "violet-blue-dark": "#381b6b",
+        "black-off": "#0d0e14",
         primary: "#606060",
       },
 

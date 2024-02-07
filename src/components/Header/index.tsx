@@ -18,10 +18,11 @@ const Header = () => {
 
       {/* Header itself */}
       <header className="pt-5 pb-4 px-4 mobileM:px-5 mobileL:px-6">
+        {/* nav - for the desktop menu version */}
         <nav
           className="max-w-[1300px] mx-auto flex items-center justify-between
           gap-x-8 text-black font-medium -tracking-[0.32px] leading-5
-          whitespace-nowrap border-2"
+          whitespace-nowrap"
         >
           {/* wrapper of btn to show mobile menu and site logo */}
           <div className="flex items-center gap-x-3">
@@ -33,8 +34,6 @@ const Header = () => {
                 viewBox="0 0 24 24"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
                   d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                 />
               </svg>
@@ -53,7 +52,6 @@ const Header = () => {
             </Link>
           </div>
 
-          {/* for desktop site version */}
           {/* nav-links */}
           <menu className="hidden laptop:flex items-center gap-x-3 text-black">
             <NavLinkItems />

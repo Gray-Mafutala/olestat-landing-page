@@ -17,9 +17,8 @@ const NavLinkItems = ({ hideMobileMenu }: NavLinkItemsProps) => {
     <>
       {listLinkItems.map(({ text, link, isDropdown }) =>
         isDropdown ? (
-          <li>
+          <li key={text}>
             <Link
-              key={text}
               to={link}
               onClick={hideMobileMenu}
               className="font-medium -tracking-[0.32px] leading-5 p-3 
@@ -35,9 +34,8 @@ const NavLinkItems = ({ hideMobileMenu }: NavLinkItemsProps) => {
             </Link>
           </li>
         ) : (
-          <li>
+          <li key={text}>
             <Link
-              key={text}
               to={link}
               onClick={hideMobileMenu}
               className="font-medium -tracking-[0.32px] leading-5 p-3 

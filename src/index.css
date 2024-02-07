@@ -8,6 +8,10 @@
     body {
         @apply font-archivo text-primary
     }
+
+    button {
+        @apply select-none whitespace-nowrap
+    }
 }
 
 @layer components {

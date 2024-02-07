@@ -11,7 +11,7 @@ const RightContentItems = ({ hideMobileMenu }: RightContentItemsProps) => {
 
       <button onClick={hideMobileMenu}
         className="text-white bg-violet-blue flex items-center 
-        gap-x-[6px] p-3 rounded-lg hover:bg-black/70 duration-300"
+        gap-x-[6px] p-3 rounded-lg hover:bg-black duration-300"
       >
         Try for free
         {/* icon right arrow */}
