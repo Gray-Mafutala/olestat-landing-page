@@ -26,6 +26,7 @@ const MobileMenu = ({ isOpen, onHide }: MobileMenuProps) => {
       }
     >
       <div
+        onClick={(e) => e.stopPropagation()}
         className="h-full pt-6 text-white bg-violet-blue-dark/70 backdrop-blur-lg
         font-medium text-lg mobileL:text-2xl max-w-md"
       >
@@ -36,9 +37,7 @@ const MobileMenu = ({ isOpen, onHide }: MobileMenuProps) => {
           hover:stroke-violet-blue duration-300"
             viewBox="0 0 24 24"
           >
-            <path
-              d="M6 18 18 6M6 6l12 12"
-            />
+            <path d="M6 18 18 6M6 6l12 12" />
           </svg>
         </button>
 

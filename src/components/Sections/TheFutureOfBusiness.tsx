@@ -34,15 +34,17 @@ const services = [
 const TheFutureOfBusiness = () => {
   return (
     <section
-      className="section-page pt-32 flex items-start justify-between"
+      className="section-page pt-32 flex flex-col gap-x-8 gap-y-10 items-center
+      laptop:flex-row laptop:items-start laptop:justify-between"
     >
       {/* left content */}
-      <div className="">
-        <h2 className="text-4xl font-bold text-black-off max-w-sm">
-          The future of business
-        </h2>
+      <div
+        className="flex flex-col items-center text-center
+        laptop:items-start laptop:text-left"
+      >
+        <h2 className="max-w-sm">The future of business</h2>
 
-        <p className="max-w-[390px] mt-4 mb-16">
+        <p className="max-w-[390px] mt-4 mb-8 laptop:mb-20">
           Risus commodo id odio turpis pharetra elementum. Pulvinar porta porta
           feugiat scelerisque in elit. Morbi rhoncus, tellus, eros consequat
           magna semper orci a tincidunt.{" "}
@@ -52,12 +54,15 @@ const TheFutureOfBusiness = () => {
       </div>
 
       {/* right content */}
-      <div className="w-full ml-8 grid grid-cols-2 gap-8">
+      <div
+        className="w-full grid grid-cols-1 justify-items-center gap-8
+        mobileL:grid-cols-2"
+      >
         {/* business card */}
         {services.map(({ sector, title, description }) => (
           <div
             key={title}
-            className="flex flex-col gap-y-5 items-start rounded-2xl
+            className="max-w-md flex flex-col gap-y-5 items-start rounded-2xl
             p-6 pb-5 border shadow-[-4px_-4px_16px_-6px_#0000001a] box-shadow:"
           >
             <span
@@ -67,7 +72,7 @@ const TheFutureOfBusiness = () => {
               {sector}
             </span>
 
-            <h3 className="text-black-off text-2xl font-bold">{title}</h3>
+            <h3 className="text-black-off text-xl mobileM:text-2xl font-bold">{title}</h3>
 
             <p className="max-w-xs">{description}</p>
 

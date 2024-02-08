@@ -24,10 +24,10 @@ const offers = [
 
 const WeOffer = () => {
   return (
-    <section className="section-page pt-64 flex flex-col items-center gap-y-20">
+    <section className="section-page pt-64 flex flex-col items-center gap-y-12">
       {/* title and paragraph */}
       <div className="flex flex-col items-center gap-y-6 text-center">
-        <h2 className="text-4xl font-bold text-black-off max-w-xl">We Offer</h2>
+        <h2 className="max-w-xl">We Offer</h2>
 
         <p className="max-w-[634px]">
           Risus commodo id odio turpis pharetra elementum. Pulvinar porta porta
@@ -37,11 +37,14 @@ const WeOffer = () => {
       </div>
 
       {/* offers */}
-      <div className="flex items-center gap-x-[72px] text-center">
+      <div
+        className="flex flex-col items-start gap-x-[72px] text-center
+        tablet:flex-row gap-y-16 "
+      >
         {offers.map(({ image, title, description }) => (
           <div key={title} className="flex flex-col items-center">
             <img src={image} alt={title} />
-            <h3 className="text-xl font-bold text-black-off mt-11 mb-3">
+            <h3 className="text-xl font-bold text-black-off mt-8 tablet:mt-11 mb-3">
               {title}
             </h3>
             <p className="max-w-[300px]">{description}</p>

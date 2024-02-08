@@ -3,17 +3,25 @@ import WomanInWhiteSuit from "../../assets/images/hero/woman-in-white-suit.png";
 const Hero = () => {
   return (
     <section
-      // 84px = height of Header component
-      className="pt-3 bg-linear-violet-blue h-[calc(100vh-84px)]"
+      // 84px = height of <Header /> component
+      className="pt-3 bg-linear-violet-blue laptop:h-[calc(100vh-84px)]"
     >
       {/* container */}
       <div
-        className="section-page h-full flex items-center"
+        className="section-page h-full flex items-center
+        pt-6 pb-7 tabletM:pt-0 tabletM:pb-0"
       >
         {/* left content */}
-        <div className="flex flex-col gap-y-8">
+        <div
+          className="w-full text-center tabletM:w-auto
+          tabletM:text-left flex flex-col gap-y-8 items-center 
+          tabletM:items-stretch"
+        >
           {/* title and paragraph */}
-          <h1 className="text-white text-6xl desktop:text-7xl font-bold">
+          <h1
+            className="text-white font-bold
+            text-4xl mobileM:text-5xl laptop:text-6xl desktop:text-7xl duration-200"
+          >
             We Build A <br />
             Premium Business
           </h1>
@@ -23,7 +31,10 @@ const Hero = () => {
           </p>
 
           {/* email input and btn */}
-          <div className="flex items-center gap-x-6">
+          <div
+            className="flex flex-col mobileM:flex-row mobileM:items-center
+            gap-x-6 gap-y-3"
+          >
             <div
               className="relative flex items-center justify-between 
               max-w-xs text-[#0d0e14] w-full"
@@ -56,11 +67,11 @@ const Hero = () => {
         </div>
 
         {/* right content */}
-        <div className="h-full max-w-[516px]">
+        <div className="w-full tabletM:w-auto hidden tabletM:block h-full max-w-[516px]">
           <img
             src={WomanInWhiteSuit}
             alt=""
-            className="w-full h-full object-cover"
+            className="w-[360px] laptop:w-full h-full object-cover"
           />
         </div>
       </div>

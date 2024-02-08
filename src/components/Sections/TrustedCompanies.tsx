@@ -10,9 +10,7 @@ const TrustedCompanies = () => {
       className="section-page pt-36 flex flex-col items-center
       gap-y-12 text-center"
     >
-      <h2 className="text-4xl font-bold text-black-off max-w-xl">
-        Trusted Companies from around the world
-      </h2>
+      <h2 className="max-w-xl">Trusted Companies from around the world</h2>
 
       <p className="max-w-[816px]">
         Vulputate molestie molestie amet leo blandit accumsan. Sapien sed amet
@@ -20,12 +18,16 @@ const TrustedCompanies = () => {
         sit. Lectus ac.
       </p>
 
-      <div className="flex items-center gap-x-[90px]">
-        <img src={uber} alt="" />
-        <img src={google} alt="" />
-        <img src={paypal} alt="" />
-        <img src={microsoft} alt="" />
-        <img src={dribbble} alt="" />
+      <div
+        className="flex flex-col mobileM:flex-row justify-center
+        items-center gap-x-16 gap-y-7 flex-wrap
+        [&>img]:w-24"
+      >
+        <img src={uber} alt="uber" />
+        <img src={google} alt="google" />
+        <img src={paypal} alt="paypal" />
+        <img src={microsoft} alt="microsoft" />
+        <img src={dribbble} alt="dribbble" />
       </div>
     </section>
   );

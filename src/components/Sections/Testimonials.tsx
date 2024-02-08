@@ -39,28 +39,28 @@ const allTestimonial = [
 
 const Testimonials = () => {
   return (
-    <section
-      className="section-page pt-64 flex flex-col items-center"
-    >
-      <h2 className="text-4xl font-bold text-black-off">
-        What our happy clients say
-      </h2>
+    <section className="section-page pt-64 flex flex-col items-center text-center">
+      <h2>What our happy clients say</h2>
 
       {/* testimonials */}
       <div
-        className="mt-14 mb-11 grid grid-cols-4 items-start text-center 
-        gap-x-6"
+        className="mt-14 mb-11 grid grid-cols-1 items-start gap-x-6 gap-y-8
+        tablet:grid-cols-2 tablet:items-stretch
+        laptop:grid-cols-4"
       >
         {/* testimonial card */}
         {allTestimonial.map(({ img, name, contact, testimonial }) => (
           <div
             key={contact}
-            className="p-6 bg-[#fbfdfe] border border-[#e8f0f4] rounded-3xl flex flex-col items-center"
+            className="max-w-sm p-6 bg-[#fbfdfe] border border-[#e8f0f4]
+            rounded-3xl flex flex-col items-center"
           >
             <img src={img} alt="" className="rounded-full w-12 h-12" />
 
             <p className="my-4 flex flex-col">
-              <span className="font-semibold text-black-off capitalize">{name}</span>
+              <span className="font-semibold text-black-off capitalize">
+                {name}
+              </span>
               <span>{contact}</span>
             </p>
 

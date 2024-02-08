@@ -19,6 +19,7 @@ export default {
         mobileM: "475px",
         mobileL: "640px",
         tablet: "768px",
+        tabletM: "800px",
         laptop: "1024px",
         desktop: "1280px",
       },

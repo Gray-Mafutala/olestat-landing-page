@@ -9,6 +9,10 @@
         @apply font-archivo text-primary
     }
 
+    h2{
+        @apply text-3xl mobileM:text-4xl font-bold text-black-off
+    }
+
     button {
         @apply select-none whitespace-nowrap
     }

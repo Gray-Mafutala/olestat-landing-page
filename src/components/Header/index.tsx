@@ -17,7 +17,7 @@ const Header = () => {
       <MobileMenu isOpen={mobileMenu} onHide={hideMobileMenu} />
 
       {/* Header itself */}
-      <header className="pt-5 pb-4">
+      <header className="pt-5 pb-4 h-[84px]">
         {/* nav - for the desktop menu version */}
         <nav
           className="section-page flex items-center justify-between
