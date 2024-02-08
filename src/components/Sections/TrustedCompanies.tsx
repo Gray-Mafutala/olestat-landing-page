@@ -1,3 +1,5 @@
+import React from 'react';
+
 import dribbble from "../../assets/images/brands/dribbble.png";
 import google from "../../assets/images/brands/google.png";
 import microsoft from "../../assets/images/brands/microsoft.png";

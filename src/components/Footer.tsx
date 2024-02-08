@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { Link } from "react-router-dom";
 import OlestatLogo from "../assets/common/olestat.png";
 import facebookIcon from "../assets/svg/social-networks/facebook-icon.svg";

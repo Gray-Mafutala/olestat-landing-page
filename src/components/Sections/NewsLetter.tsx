@@ -1,3 +1,5 @@
+import React from 'react';
+
 import BtnBlue from "../UI/BtnBlue";
 
 const NewsLetter = () => {

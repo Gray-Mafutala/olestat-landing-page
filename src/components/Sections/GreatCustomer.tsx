@@ -1,3 +1,5 @@
+import React from 'react';
+
 import smillingMan from "../../assets/images/great-customer/smiling-man.png";
 import BtnBlue from "../UI/BtnBlue";
 

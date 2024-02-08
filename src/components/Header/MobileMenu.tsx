@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect } from "react";
 import NavLinkItems from "./NavLinkItems";
 import RightContentItems from "./RightContentItems";

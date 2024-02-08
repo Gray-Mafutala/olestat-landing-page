@@ -1,3 +1,5 @@
+import React from 'react';
+
 import avatar1 from "../../assets/images/testimonials/Avatar-1.png";
 import avatar2 from "../../assets/images/testimonials/Avatar-2.png";
 import avatar3 from "../../assets/images/testimonials/Avatar-3.png";

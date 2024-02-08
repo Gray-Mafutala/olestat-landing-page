@@ -1,3 +1,5 @@
+import React from 'react';
+
 import WomanInWhiteSuit from "../../assets/images/hero/woman-in-white-suit.png";
 
 const Hero = () => {

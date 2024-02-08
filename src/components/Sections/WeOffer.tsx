@@ -1,3 +1,5 @@
+import React from 'react';
+
 import offer1 from "../../assets/images/offers/offer-1.png";
 import offer2 from "../../assets/images/offers/offer-2.png";
 import offer3 from "../../assets/images/offers/offer-3.png";
@@ -24,7 +26,10 @@ const offers = [
 
 const WeOffer = () => {
   return (
-    <section className="section-page pt-64 flex flex-col items-center gap-y-12">
+    <section
+      className="section-page pt-64 flex flex-col items-center gap-y-12
+      tablet:gap-y-20"
+    >
       {/* title and paragraph */}
       <div className="flex flex-col items-center gap-y-6 text-center">
         <h2 className="max-w-xl">We Offer</h2>
