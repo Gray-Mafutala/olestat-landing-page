@@ -18,4 +18,8 @@
     .bg-linear-violet-blue {
         background: linear-gradient(127deg, #6425D3 0%, #A259FF 100%);
     }
+
+    .section-page {
+        @apply max-w-[1300px] mx-auto px-4 mobileM:px-5 mobileL:px-6
+    }
 }

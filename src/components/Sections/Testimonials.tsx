@@ -17,7 +17,7 @@ const allTestimonial = [
     name: "Nathanael burgess",
     contact: "@NathanaelBurgess",
     testimonial:
-      "”Business should be nominated for service of the year. No matter where you go, Business is the coolest, most happening thing around",
+      "Business should be nominated for service of the year. No matter where you go, Business is the coolest, most happening thing around.",
   },
 
   {
@@ -40,8 +40,7 @@ const allTestimonial = [
 const Testimonials = () => {
   return (
     <section
-      className="px-4 mobileM:px-5 mobileL:px-6 max-w-[1300px] mx-auto
-      pt-64 flex flex-col items-center"
+      className="section-page pt-64 flex flex-col items-center"
     >
       <h2 className="text-4xl font-bold text-black-off">
         What our happy clients say
@@ -61,11 +60,11 @@ const Testimonials = () => {
             <img src={img} alt="" className="rounded-full w-12 h-12" />
 
             <p className="my-4 flex flex-col">
-              <span className="font-semibold text-black-off">{name}</span>
+              <span className="font-semibold text-black-off capitalize">{name}</span>
               <span>{contact}</span>
             </p>
 
-            <p>{testimonial}</p>
+            <p>&ldquo;{testimonial}&rdquo;</p>
           </div>
         ))}
       </div>

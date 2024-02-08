@@ -24,7 +24,7 @@ const offers = [
 
 const WeOffer = () => {
   return (
-    <section className="pt-64 flex flex-col items-center gap-y-20">
+    <section className="section-page pt-64 flex flex-col items-center gap-y-20">
       {/* title and paragraph */}
       <div className="flex flex-col items-center gap-y-6 text-center">
         <h2 className="text-4xl font-bold text-black-off max-w-xl">We Offer</h2>

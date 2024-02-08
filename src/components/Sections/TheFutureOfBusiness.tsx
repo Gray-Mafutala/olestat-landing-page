@@ -34,8 +34,7 @@ const services = [
 const TheFutureOfBusiness = () => {
   return (
     <section
-      className="px-4 mobileM:px-5 mobileL:px-6 max-w-[1300px] mx-auto
-      pt-32 flex items-start justify-between"
+      className="section-page pt-32 flex items-start justify-between"
     >
       {/* left content */}
       <div className="">

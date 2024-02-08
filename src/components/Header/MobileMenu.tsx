@@ -17,7 +17,6 @@ const MobileMenu = ({ isOpen, onHide }: MobileMenuProps) => {
   return (
     <div
       onClick={onHide}
-      //  className="absolute z-30 w-full h-full bg-transparent"
       className={
         isOpen
           ? `bg-white/40 fixed inset-0 font-medium text-lg 

@@ -17,10 +17,10 @@ const Header = () => {
       <MobileMenu isOpen={mobileMenu} onHide={hideMobileMenu} />
 
       {/* Header itself */}
-      <header className="pt-5 pb-4 px-4 mobileM:px-5 mobileL:px-6">
+      <header className="pt-5 pb-4">
         {/* nav - for the desktop menu version */}
         <nav
-          className="max-w-[1300px] mx-auto flex items-center justify-between
+          className="section-page flex items-center justify-between
           gap-x-8 text-black font-medium -tracking-[0.32px] leading-5
           whitespace-nowrap"
         >
@@ -33,9 +33,7 @@ const Header = () => {
                 hover:stroke-violet-blue duration-300"
                 viewBox="0 0 24 24"
               >
-                <path
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
+                <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
             </button>
 

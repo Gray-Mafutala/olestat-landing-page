@@ -4,17 +4,14 @@ const Hero = () => {
   return (
     <section
       // 84px = height of Header component
-      className="bg-linear-violet-blue px-4 pt-3 mobileM:px-5 mobileL:px-6
-      h-[calc(100vh-84px)]"
+      className="pt-3 bg-linear-violet-blue h-[calc(100vh-84px)]"
     >
       {/* container */}
       <div
-        className="px-4 mobileM:px-5 mobileL:px-6 h-full max-w-[1300px] mx-auto flex items-center"
+        className="section-page h-full flex items-center"
       >
         {/* left content */}
-        <div
-          className="flex flex-col gap-y-8"
-        >
+        <div className="flex flex-col gap-y-8">
           {/* title and paragraph */}
           <h1 className="text-white text-6xl desktop:text-7xl font-bold">
             We Build A <br />
@@ -37,7 +34,7 @@ const Hero = () => {
                 placeholder="Your email"
                 className="w-full p-4 bg-white rounded-2xl pr-11 
                 outline-none ml-[2px] focus:shadow-[0_0_0_2px_#000] 
-                duration-200 placeholder-current leading-5"
+                duration-200 placeholder-primary leading-5"
               />
 
               <span className="absolute right-4">
@@ -59,9 +56,7 @@ const Hero = () => {
         </div>
 
         {/* right content */}
-        <div
-          className="h-full max-w-[516px]"
-        >
+        <div className="h-full max-w-[516px]">
           <img
             src={WomanInWhiteSuit}
             alt=""

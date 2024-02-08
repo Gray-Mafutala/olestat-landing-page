@@ -4,8 +4,7 @@ import BtnBlue from "../UI/BtnBlue";
 const GreatCustomer = () => {
   return (
     <section
-      className="px-4 mobileM:px-5 mobileL:px-6 max-w-[1300px] mx-auto
-      pt-56 flex items-center justify-between"
+      className="section-page pt-56 flex items-center justify-between"
     >
       {/* left content */}
       <div className="flex flex-col items-start">

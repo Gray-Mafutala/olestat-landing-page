@@ -3,9 +3,8 @@ import BtnBlue from "../UI/BtnBlue";
 const NewsLetter = () => {
   return (
     <section
-      className="px-4 mobileM:px-5 mobileL:px-6 max-w-[1300px] mx-auto
-      mt-16 mb-24 py-20 flex flex-col items-center justify-center text-center 
-      bg-linear-violet-blue rounded-3xl"
+      className="section-page mt-16 mb-24 py-20 flex flex-col items-center
+      justify-center text-center bg-linear-violet-blue rounded-3xl"
     >
       <h2 className="text-white text-4xl font-bold">Join our Newsletter</h2>
 
@@ -21,7 +20,7 @@ const NewsLetter = () => {
           type="email"
           id="email-join-newsletter"
           placeholder="Your e-mail address"
-          className="outline-none p-4 rounded-3xl"
+          className="outline-none p-4 rounded-3xl leading-5 text-black-off"
         />
 
         <BtnBlue>Submit</BtnBlue>
