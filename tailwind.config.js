@@ -19,9 +19,12 @@ export default {
         mobileM: "475px",
         mobileL: "640px",
         tablet: "768px",
-        tabletM: "800px",
+        tabletM: "828px",
         laptop: "1024px",
         desktop: "1280px",
+
+        // to display Hero image correctly
+        iPadPro: { raw: "(max-height: 1366px),(min-width:1024px)" },
       },
     },
   },

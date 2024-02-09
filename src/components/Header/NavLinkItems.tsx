@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { Link } from "react-router-dom";
 
 const listLinkItems = [
@@ -22,9 +22,9 @@ const NavLinkItems = ({ hideMobileMenu }: NavLinkItemsProps) => {
             <Link
               to={link}
               onClick={hideMobileMenu}
-              className="font-medium -tracking-[0.32px] leading-5 p-3 
-              hover:text-violet-blue duration-300 inline-flex items-center
-              gap-x-[6px] group"
+              className="font-medium -tracking-[0.32px] leading-5  
+              p-3 hover:text-violet-blue duration-300 inline-flex
+              items-center gap-x-[6px] group"
             >
               {text}
 

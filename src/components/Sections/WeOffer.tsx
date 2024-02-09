@@ -1,8 +1,11 @@
-import React from 'react';
+import React from "react";
+
+import SectionTitle from "../UI/SectionTitle";
 
 import offer1 from "../../assets/images/offers/offer-1.png";
 import offer2 from "../../assets/images/offers/offer-2.png";
 import offer3 from "../../assets/images/offers/offer-3.png";
+import SectionParagraph from "../UI/SectionParagraph";
 
 const offers = [
   {
@@ -25,29 +28,39 @@ const offers = [
 ];
 
 const WeOffer = () => {
+  const getDelayByIndex = (index: number) => (index * 200).toString();
+
   return (
     <section
-      className="section-page pt-64 flex flex-col items-center gap-y-12
+      className="section-page flex flex-col items-center gap-y-12
       tablet:gap-y-20"
     >
       {/* title and paragraph */}
       <div className="flex flex-col items-center gap-y-6 text-center">
-        <h2 className="max-w-xl">We Offer</h2>
+        <SectionTitle addStyles="max-w-xl">We Offer</SectionTitle>
 
-        <p className="max-w-[634px]">
+        <SectionParagraph addStyles="max-w-[634px]">
           Risus commodo id odio turpis pharetra elementum. Pulvinar porta porta
           feugiat scelerisque in elit. Morbi rhoncus, tellus, eros consequat
           magna semper orci a tincidunt.
-        </p>
+        </SectionParagraph>
       </div>
 
-      {/* offers */}
+      {/* offers wrapper */}
       <div
         className="flex flex-col items-start gap-x-[72px] text-center
         tablet:flex-row gap-y-16 "
       >
-        {offers.map(({ image, title, description }) => (
-          <div key={title} className="flex flex-col items-center">
+        {offers.map(({ image, title, description }, index) => (
+          // offer card
+          <div
+            key={title}
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay={getDelayByIndex(index)}
+            data-aos-easing="ease-out"
+            className="flex flex-col items-center"
+          >
             <img src={image} alt={title} />
             <h3 className="text-xl font-bold text-black-off mt-8 tablet:mt-11 mb-3">
               {title}

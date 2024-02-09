@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 import WomanInWhiteSuit from "../../assets/images/hero/woman-in-white-suit.png";
 
@@ -6,7 +6,8 @@ const Hero = () => {
   return (
     <section
       // 84px = height of <Header /> component
-      className="pt-3 bg-linear-violet-blue laptop:h-[calc(100vh-84px)]"
+      className="pt-3 bg-linear-violet-blue laptop:h-[calc(100vh-84px)]
+      iPadPro:h-auto"
     >
       {/* container */}
       <div
@@ -15,6 +16,9 @@ const Hero = () => {
       >
         {/* left content */}
         <div
+          data-aos="fade-left"
+          data-aos-duration="500"
+          data-aos-easing="ease-out"
           className="w-full text-center tabletM:w-auto
           tabletM:text-left flex flex-col gap-y-8 items-center 
           tabletM:items-stretch"
@@ -69,7 +73,13 @@ const Hero = () => {
         </div>
 
         {/* right content */}
-        <div className="w-full tabletM:w-auto hidden tabletM:block h-full max-w-[516px]">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="500"
+          data-aos-easing="ease-out"
+          className="w-full tabletM:w-auto hidden tabletM:block
+          h-full ma-w-[516x] max-w-[600px]"
+        >
           <img
             src={WomanInWhiteSuit}
             alt=""

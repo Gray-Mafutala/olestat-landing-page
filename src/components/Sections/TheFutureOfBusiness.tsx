@@ -1,7 +1,9 @@
-import React from 'react';
+import React from "react";
 
 import { Link } from "react-router-dom";
 import BtnBlue from "../UI/BtnBlue";
+import SectionTitle from "../UI/SectionTitle";
+import SectionParagraph from "../UI/SectionParagraph";
 
 const services = [
   {
@@ -34,9 +36,11 @@ const services = [
 ];
 
 const TheFutureOfBusiness = () => {
+  const getDelayByIndex = (index: number) => (index * 200).toString();
+
   return (
     <section
-      className="section-page pt-32 flex flex-col gap-x-8 gap-y-10 items-center
+      className="section-page flex flex-col gap-x-8 gap-y-10 items-center
       laptop:flex-row laptop:items-start laptop:justify-between"
     >
       {/* left content */}
@@ -44,13 +48,13 @@ const TheFutureOfBusiness = () => {
         className="flex flex-col items-center text-center
         laptop:items-start laptop:text-left"
       >
-        <h2 className="max-w-sm">The future of business</h2>
+        <SectionTitle addStyles="max-w-sm">The future of business</SectionTitle>
 
-        <p className="max-w-[390px] mt-4 mb-8 laptop:mb-20">
+        <SectionParagraph addStyles="max-w-[390px] mt-4 mb-8 laptop:mb-20">
           Risus commodo id odio turpis pharetra elementum. Pulvinar porta porta
           feugiat scelerisque in elit. Morbi rhoncus, tellus, eros consequat
-          magna semper orci a tincidunt.{" "}
-        </p>
+          magna semper orci a tincidunt.
+        </SectionParagraph>
 
         <BtnBlue>Get started</BtnBlue>
       </div>
@@ -61,8 +65,12 @@ const TheFutureOfBusiness = () => {
         mobileL:grid-cols-2"
       >
         {/* business card */}
-        {services.map(({ sector, title, description }) => (
+        {services.map(({ sector, title, description }, index) => (
           <div
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-easing="ease-out"
+            data-aos-delay={getDelayByIndex(index)}
             key={title}
             className="max-w-md flex flex-col gap-y-5 items-start rounded-2xl
             p-6 pb-5 border shadow-[-4px_-4px_16px_-6px_#0000001a] box-shadow:"
@@ -74,7 +82,9 @@ const TheFutureOfBusiness = () => {
               {sector}
             </span>
 
-            <h3 className="text-black-off text-xl mobileM:text-2xl font-bold">{title}</h3>
+            <h3 className="text-black-off text-xl mobileM:text-2xl font-bold">
+              {title}
+            </h3>
 
             <p className="max-w-xs">{description}</p>
 

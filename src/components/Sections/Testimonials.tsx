@@ -1,9 +1,11 @@
-import React from 'react';
+import React from "react";
 
 import avatar1 from "../../assets/images/testimonials/Avatar-1.png";
 import avatar2 from "../../assets/images/testimonials/Avatar-2.png";
 import avatar3 from "../../assets/images/testimonials/Avatar-3.png";
 import avatar4 from "../../assets/images/testimonials/Avatar-4.png";
+import BtnBlue from "../UI/BtnBlue";
+import SectionTitle from "../UI/SectionTitle";
 
 const allTestimonial = [
   {
@@ -40,9 +42,11 @@ const allTestimonial = [
 ];
 
 const Testimonials = () => {
+  const getDelayByIndex = (index: number) => (index * 200).toString();
+
   return (
-    <section className="section-page pt-64 flex flex-col items-center text-center">
-      <h2>What our happy clients say</h2>
+    <section className="section-page flex flex-col items-center text-center">
+      <SectionTitle>What our happy clients say</SectionTitle>
 
       {/* testimonials */}
       <div
@@ -51,8 +55,12 @@ const Testimonials = () => {
         laptop:grid-cols-4"
       >
         {/* testimonial card */}
-        {allTestimonial.map(({ img, name, contact, testimonial }) => (
+        {allTestimonial.map(({ img, name, contact, testimonial }, index) => (
           <div
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-easing="ease-out"
+            data-aos-delay={getDelayByIndex(index)}
             key={contact}
             className="max-w-sm p-6 bg-[#fbfdfe] border border-[#e8f0f4]
             rounded-3xl flex flex-col items-center"
@@ -71,11 +79,12 @@ const Testimonials = () => {
         ))}
       </div>
 
-      {/* btn to switch */}
-      <div className="flex items-center justify-center gap-x-4">
+      {/* wrapper of buttons to switch */}
+      <div className="hidden laptop:flex items-center justify-center gap-x-4">
         <button
-          className="w-12 h-12 flex items-center justify-center bg-[#e4f1f7] rounded-full
-          border-transparent"
+          className="w-12 h-12 flex items-center justify-center
+          bg-[#e4f1f7] rounded-full border-transparent
+          hover:scale-[.96] active:scale-90 duration-200"
         >
           <svg className="w-5 h-5 fill-[#0d0e14]">
             <path d="m9.417 10 2.916-2.917a.806.806 0 0 0 0-1.166.806.806 0 0 0-1.166 0l-3.5 3.5a.806.806 0 0 0 0 1.166l3.5 3.5c.166.167.333.25.583.25.25 0 .417-.083.583-.25a.806.806 0 0 0 0-1.166L9.417 10Z" />
@@ -83,14 +92,18 @@ const Testimonials = () => {
         </button>
 
         <button
-          className="w-12 h-12 flex items-center justify-center bg-black rounded-full
-          border-transparent"
+          className="w-12 h-12 flex items-center justify-center
+          bg-black rounded-full border-transparent
+          hover:scale-[.96] active:scale-90 duration-200"
         >
           <svg className="w-5 h-5 fill-white">
             <path d="M12.917 9.417 8.25 4.667a.806.806 0 0 0-1.167 0 .806.806 0 0 0 0 1.166l4.084 4.084L7.083 14a.756.756 0 0 0-.25.583c0 .5.334.834.834.834.25 0 .416-.084.583-.25l4.75-4.75c.25-.167.25-.667-.083-1Z" />
           </svg>
         </button>
       </div>
+
+      {/* btn "see more", for mobile screens */}
+      <BtnBlue addStyles="laptop:hidden">See more</BtnBlue>
     </section>
   );
 };

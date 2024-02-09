@@ -1,26 +1,26 @@
-import React from 'react';
+import React from "react";
 
 import { Link } from "react-router-dom";
-import OlestatLogo from "../assets/common/olestat.png";
-import facebookIcon from "../assets/svg/social-networks/facebook-icon.svg";
-import twitterIcon from "../assets/svg/social-networks/twitter-icon.svg";
-import linkedinIcon from "../assets/svg/social-networks/linkedin-icon.svg";
+import OlestatLogo from "../../assets/common/olestat.png";
+import facebookIcon from "../../assets/svg/social-networks/facebook-icon.svg";
+import twitterIcon from "../../assets/svg/social-networks/twitter-icon.svg";
+import linkedinIcon from "../../assets/svg/social-networks/linkedin-icon.svg";
 
 const Footer = () => {
   return (
-    <footer className="section-page pt-20 mb-10">
+    <footer className="section-page mt-24 mb-10">
+      {/* top content */}
       <div
-        className="flex flex-col items-center text-center gap-x-8 gap-y-12
+        className="flex flex-col text-center gap-x-8 gap-y-12
         mobileL:grid mobileL:grid-cols-2 mobileL:justify-items-center
-        tablet:flex tablet:flex-row tablet:justify-between tablet:items-stretch
-        tablet:text-left"
+        tablet:flex tablet:flex-row tablet:justify-between tablet:text-left"
       >
         {/* site logo, paragraph, and social networks */}
         <div
           className="flex flex-col items-center text-center
           tablet:items-stretch tablet:text-left"
         >
-          {/* logo */}
+          {/* site logo */}
           <Link
             to="/"
             className="pr-3 hover:opacity-60 active:scale-[.98] duration-300"
@@ -33,18 +33,27 @@ const Footer = () => {
           </Link>
 
           <p className="mt-6 mb-10 tablet:max-w-[286px]">
-            Ut risus mattis interdum faucibus facilisi. Facilisi purus
-            accumsan aliquam.
+            Ut risus mattis interdum faucibus facilisi. Facilisi purus accumsan
+            aliquam.
           </p>
 
           <div className="flex items-center gap-x-6">
-            <Link to="/" className="hover:scale-125 duration-200">
+            <Link
+              to="/"
+              className="hover:scale-125 active:scale-95 duration-200"
+            >
               <img src={facebookIcon} alt="facebook" />
             </Link>
-            <Link to="/" className="hover:scale-125 duration-200">
+            <Link
+              to="/"
+              className="hover:scale-125 active:scale-95 duration-200"
+            >
               <img src={twitterIcon} alt="twitter" />
             </Link>
-            <Link to="/" className="hover:scale-125 duration-200">
+            <Link
+              to="/"
+              className="hover:scale-125 active:scale-95 duration-200"
+            >
               <img src={linkedinIcon} alt="linkedin" />
             </Link>
           </div>
@@ -170,7 +179,7 @@ const Footer = () => {
         </ul>
       </div>
 
-      {/* bottom items */}
+      {/* bottom content */}
       <div
         className="mt-20 flex justify-center flex-wrap gap-x-6 gap-y-4 text-black 
         font-medium whitespace-nowrap"

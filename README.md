@@ -7,10 +7,8 @@
 ---
 
 ### Overview after integration
-#### Desktop
+  ![Menu](/readme-img/menu.PNG)
 
-  ![Desktop version of site after integration](/readme-img/IMG.EXT)
+  ![Hero section](/readme-img/screen-1.PNG)
 
-#### Other
-
-  ![Other](/readme-img/IMG.EXT)
+  ![Hero section](/readme-img/screen-2.PNG)

@@ -19,7 +19,7 @@ const Header = () => {
       <MobileMenu isOpen={mobileMenu} onHide={hideMobileMenu} />
 
       {/* Header itself */}
-      <header className="pt-5 pb-4 h-[84px]">
+      <header className="pt-5 pb-4 mobileM:h-[84px]">
         {/* nav - for the desktop menu version */}
         <nav
           className="section-page flex items-center justify-between
@@ -39,7 +39,7 @@ const Header = () => {
               </svg>
             </button>
 
-            {/* logo */}
+            {/* site logo */}
             <Link
               to="/"
               className="pr-3 hover:opacity-60 active:scale-[.98] duration-300"
