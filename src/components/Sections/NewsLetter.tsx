@@ -18,8 +18,8 @@ const NewsLetter = () => {
       </SectionParagraph>
 
       <div
-        data-aos="zoom-out"
-        data-aos-duration="600"
+        data-aos="zoom-in"
+        data-aos-duration="300"
         data-aos-easing="ease-out"
         className="flex items-center mobile:gap-x-4 mobileM:gap-x-12
         bg-white justify-between py-1 pr-1 rounded-2xl

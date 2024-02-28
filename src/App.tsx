@@ -23,7 +23,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <main className="flex flex-col gap-y-20">
+      <main className="flex flex-col gap-y-20 overflow-hidden">
         <Hero />
         <div className="flex flex-col gap-y-32">
           <TrustedCompanies />

@@ -80,7 +80,12 @@ const Testimonials = () => {
       </div>
 
       {/* wrapper of buttons to switch */}
-      <div className="hidden laptop:flex items-center justify-center gap-x-4">
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="300"
+        data-aos-easing="ease-out"
+        className="hidden laptop:flex items-center justify-center gap-x-4"
+      >
         <button
           className="w-12 h-12 flex items-center justify-center
           bg-[#e4f1f7] rounded-full border-transparent
